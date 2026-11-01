@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  /* ---------- Мобильное меню ---------- */
+  /* ---------- ГЊГ®ГЎГЁГ«ГјГ­Г®ГҐ Г¬ГҐГ­Гѕ ---------- */
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
 
@@ -17,7 +17,7 @@
     });
   });
 
-  /* ---------- Кнопки «Записаться» из карточек услуг ---------- */
+  /* ---------- ГЉГ­Г®ГЇГЄГЁ В«Г‡Г ГЇГЁГ±Г ГІГјГ±ГїВ» ГЁГ§ ГЄГ Г°ГІГ®Г·ГҐГЄ ГіГ±Г«ГіГЈ ---------- */
   const serviceSelect = document.getElementById('service');
 
   document.querySelectorAll('[data-service]').forEach(btn => {
@@ -28,7 +28,7 @@
     });
   });
 
-  /* ---------- Генерация слотов времени ---------- */
+  /* ---------- ГѓГҐГ­ГҐГ°Г Г¶ГЁГї Г±Г«Г®ГІГ®Гў ГўГ°ГҐГ¬ГҐГ­ГЁ ---------- */
   const timeSelect = document.getElementById('time');
   const START = 9 * 60;   // 09:00
   const END = 19 * 60;    // 19:00
@@ -42,14 +42,14 @@
     timeSelect.appendChild(opt);
   }
 
-  /* ---------- Минимальная дата — сегодня ---------- */
+  /* ---------- ГЊГЁГ­ГЁГ¬Г Г«ГјГ­Г Гї Г¤Г ГІГ  вЂ” Г±ГҐГЈГ®Г¤Г­Гї ---------- */
   const dateInput = document.getElementById('date');
   const now = new Date();
   const todayISO =
     `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   dateInput.min = todayISO;
 
-  /* ---------- Валидация ---------- */
+  /* ---------- Г‚Г Г«ГЁГ¤Г Г¶ГЁГї ---------- */
   const form = document.getElementById('bookingForm');
   const nameInput = document.getElementById('name');
   const phoneInput = document.getElementById('phone');
@@ -83,7 +83,7 @@
     return ok;
   }
 
-  /* ---------- Отправка ---------- */
+  /* ---------- ГЋГІГЇГ°Г ГўГЄГ  ---------- */
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -103,24 +103,29 @@
       createdAt: new Date().toISOString()
     };
 
-    // Сохраняем заявку локально (в реальном проекте — отправка на сервер)
-    try {
-      const store = JSON.parse(localStorage.getItem('atb_bookings') || '[]');
-      store.push(booking);
-      localStorage.setItem('atb_bookings', JSON.stringify(store));
-    } catch (err) {
-      console.warn('Не удалось сохранить заявку локально:', err);
-    }
-
-    // Форматируем дату для вывода
+    // Г‘Г®ГµГ°Г Г­ГїГҐГ¬ Г§Г ГїГўГЄГі Г«Г®ГЄГ Г«ГјГ­Г® (Гў Г°ГҐГ Г«ГјГ­Г®Г¬ ГЇГ°Г®ГҐГЄГІГҐ вЂ” Г®ГІГЇГ°Г ГўГЄГ  Г­Г  Г±ГҐГ°ГўГҐГ°)
+   // try {
+   //   const store = JSON.parse(localStorage.getItem('atb_bookings') || '[]');
+    //  store.push(booking);
+   //   localStorage.setItem('atb_bookings', JSON.stringify(store));
+ //   } catch (err) {
+ //     console.warn('ГЌГҐ ГіГ¤Г Г«Г®Г±Гј Г±Г®ГµГ°Г Г­ГЁГІГј Г§Г ГїГўГЄГі Г«Г®ГЄГ Г«ГјГ­Г®:', err);
+ //   }
+ fetch('https://formspree.io/f/mrppyvra',{
+    
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+  body: JSON.stringify(booking)
+}).catch(err => console.error(err));
+    // Г”Г®Г°Г¬Г ГІГЁГ°ГіГҐГ¬ Г¤Г ГІГі Г¤Г«Гї ГўГ»ГўГ®Г¤Г 
     const [y, mo, d] = booking.date.split('-');
     const dateText = `${d}.${mo}.${y}`;
 
     successDetails.innerHTML = `
-      <div><span>Имя</span><span>${escapeHTML(booking.name)}</span></div>
-      <div><span>Телефон</span><span>${escapeHTML(booking.phone)}</span></div>
-      <div><span>Услуга</span><span>${escapeHTML(booking.service)}</span></div>
-      <div><span>Дата и время</span><span>${dateText}, ${booking.time}</span></div>
+      <div><span>Г€Г¬Гї</span><span>${escapeHTML(booking.name)}</span></div>
+      <div><span>Г’ГҐГ«ГҐГґГ®Г­</span><span>${escapeHTML(booking.phone)}</span></div>
+      <div><span>Г“Г±Г«ГіГЈГ </span><span>${escapeHTML(booking.service)}</span></div>
+      <div><span>Г„Г ГІГ  ГЁ ГўГ°ГҐГ¬Гї</span><span>${dateText}, ${booking.time}</span></div>
     `;
 
     form.style.display = 'none';
@@ -128,7 +133,7 @@
     successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 
-  /* ---------- «Записаться ещё раз» ---------- */
+  /* ---------- В«Г‡Г ГЇГЁГ±Г ГІГјГ±Гї ГҐГ№Вё Г°Г Г§В» ---------- */
   document.getElementById('againBtn').addEventListener('click', () => {
     form.reset();
     form.querySelectorAll('.field').forEach(f => f.classList.remove('invalid'));
@@ -137,7 +142,7 @@
     nameInput.focus();
   });
 
-  /* ---------- Утилита ---------- */
+  /* ---------- Г“ГІГЁГ«ГЁГІГ  ---------- */
   function escapeHTML(str) {
     return String(str).replace(/[&<>"']/g, s => ({
       '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
