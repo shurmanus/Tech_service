@@ -1,0 +1,470 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>АвтоТехСервис — ремонт и обслуживание автомобилей в Москве</title>
+<meta name="description" content="Автосервис АвтоТехСервис: компьютерная диагностика, ТО, ремонт двигателя, шиномонтаж, кузовной ремонт. Онлайн-запись на приём.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top" aria-label="АвтоТехСервис — на главную">
+      <span class="logo__icon">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3l9.4-9.4a4 4 0 0 0-2-2z"/>
+        </svg>
+      </span>
+      <span>АвтоТех<em>Сервис</em></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Услуги</a>
+      <a href="#booking">Запись на приём</a>
+      <a href="#about">О компании</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+74951234567" class="btn btn--primary btn--sm">+7 (495) 123-45-67</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <path d="M3 6h18M3 12h18M3 18h18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="badge"><span class="dot"></span> Работаем ежедневно с 09:00 до 19:00</div>
+      <h1>Ремонт и обслуживание автомобилей <span>с гарантией 2 года</span></h1>
+      <p>
+        Профессиональная диагностика, ТО и ремонт любых марок авто. Собственный склад запчастей,
+        современное оборудование и мастера с опытом более 10 лет. Запишитесь онлайн — ответим в течение 15 минут.
+      </p>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--primary">
+          Записаться на приём
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn--ghost">Наши услуги</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b>12 лет</b><span>на рынке автосервиса</span></div>
+        <div class="stat"><b>8 500+</b><span>довольных клиентов</span></div>
+        <div class="stat"><b>18</b><span>мастеров и специалистов</span></div>
+        <div class="stat"><b>2 года</b><span>гарантия на работы</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Услуги</span>
+        <h2>Что мы делаем</h2>
+        <p>Полный цикл работ — от планового ТО до сложного кузовного ремонта. Цены указаны «от» и зависят от марки автомобиля и сложности работ.</p>
+      </div>
+
+      <div class="services">
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3l9.4-9.4a4 4 0 0 0-2-2z"/></svg>
+          </div>
+          <h3>Техническое обслуживание (ТО)</h3>
+          <p>Плановое ТО по регламенту производителя: замена масла, фильтров, проверка всех систем и жидкостей.</p>
+          <div class="service__foot">
+            <div class="price">от 3 500 ₽<small>≈ 1,5 часа</small></div>
+            <button class="link-btn" data-service="Техническое обслуживание (ТО)">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M7 10v4M12 10v4M17 10v4"/></svg>
+          </div>
+          <h3>Компьютерная диагностика</h3>
+          <p>Считывание и расшифровка ошибок, проверка электронных блоков, поиск неисправностей по 40+ параметрам.</p>
+          <div class="service__foot">
+            <div class="price">от 1 000 ₽<small>≈ 40 минут</small></div>
+            <button class="link-btn" data-service="Компьютерная диагностика">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V9a3 3 0 0 1 3-3h6l4 4h2a2 2 0 0 1 2 2v5"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+          </div>
+          <h3>Ремонт двигателя</h3>
+          <p>Замена ремня ГРМ, ремонт головки блока, устранение течей и посторонних шумов. Дефектовка бесплатно.</p>
+          <div class="service__foot">
+            <div class="price">от 8 000 ₽<small>от 4 часов</small></div>
+            <button class="link-btn" data-service="Ремонт двигателя">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+          </div>
+          <h3>Шиномонтаж и балансировка</h3>
+          <p>Сезонная смена шин, балансировка колёс, ремонт проколов, правка дисков. Хранение шин зимой и летом.</p>
+          <div class="service__foot">
+            <div class="price">от 1 500 ₽<small>≈ 45 минут</small></div>
+            <button class="link-btn" data-service="Шиномонтаж и балансировка">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/></svg>
+          </div>
+          <h3>Тормозная система</h3>
+          <p>Замена колодок и дисков, прокачка тормозов, ремонт суппортов, диагностика ABS и стояночного тормоза.</p>
+          <div class="service__foot">
+            <div class="price">от 2 500 ₽<small>≈ 2 часа</small></div>
+            <button class="link-btn" data-service="Тормозная система">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16l1.8-4.6A2 2 0 0 1 6.7 10h10.6a2 2 0 0 1 1.9 1.4L21 16v3h-3v-2H6v2H3z"/><path d="M7 13h10"/></svg>
+          </div>
+          <h3>Кузовной ремонт и покраска</h3>
+          <p>Устранение вмятин, ремонт бамперов, покраска в камере с компьютерным подбором цвета.</p>
+          <div class="service__foot">
+            <div class="price">от 5 000 ₽<small>от 1 дня</small></div>
+            <button class="link-btn" data-service="Кузовной ремонт и покраска">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s5 5.5 5 9.5a5 5 0 0 1-10 0C7 8.5 12 3 12 3z"/></svg>
+          </div>
+          <h3>Замена масла и фильтров</h3>
+          <p>Масло в двигателе, АКПП и МКПП, замена воздушных, салонных и топливных фильтров. Работа за 30 минут.</p>
+          <div class="service__foot">
+            <div class="price">от 1 200 ₽<small>≈ 30 минут</small></div>
+            <button class="link-btn" data-service="Замена масла и фильтров">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9M12 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M5 13l7 4 7-4"/></svg>
+          </div>
+          <h3>Подвеска и рулевое управление</h3>
+          <p>Диагностика ходовой, замена амортизаторов, рычагов, шаровых опор и рулевых наконечников.</p>
+          <div class="service__foot">
+            <div class="price">от 2 000 ₽<small>от 1,5 часа</small></div>
+            <button class="link-btn" data-service="Подвеска и рулевое управление">Записаться <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING ================= -->
+  <section class="section" id="booking">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Онлайн-запись</span>
+        <h2>Запишитесь на приём</h2>
+        <p>Выберите услугу, удобную дату и время — мы перезвоним в течение 15 минут и подтвердим запись.</p>
+      </div>
+
+      <div class="booking__grid">
+
+        <!-- Форма -->
+        <div class="panel">
+          <form class="form" id="bookingForm" novalidate>
+            <div class="field">
+              <label for="name">Ваше имя <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Иван" autocomplete="name">
+              <p class="err">Укажите имя (минимум 2 символа)</p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Телефон <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+              <p class="err">Введите корректный номер телефона</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="service">Услуга <span class="req">*</span></label>
+              <select id="service" name="service">
+                <option value="">Выберите услугу</option>
+                <option>Техническое обслуживание (ТО)</option>
+                <option>Компьютерная диагностика</option>
+                <option>Ремонт двигателя</option>
+                <option>Шиномонтаж и балансировка</option>
+                <option>Тормозная система</option>
+                <option>Кузовной ремонт и покраска</option>
+                <option>Замена масла и фильтров</option>
+                <option>Подвеска и рулевое управление</option>
+                <option>Другое</option>
+              </select>
+              <p class="err">Пожалуйста, выберите услугу</p>
+            </div>
+
+            <div class="field">
+              <label for="date">Дата <span class="req">*</span></label>
+              <input type="date" id="date" name="date">
+              <p class="err">Выберите дату визита</p>
+            </div>
+
+            <div class="field">
+              <label for="time">Время <span class="req">*</span></label>
+              <select id="time" name="time">
+                <option value="">Выберите время</option>
+              </select>
+              <p class="err">Выберите удобное время</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="comment">Комментарий</label>
+              <textarea id="comment" name="comment" placeholder="Марка и модель авто, описание проблемы или пожелания"></textarea>
+            </div>
+
+            <div class="form__foot">
+              <button type="submit" class="btn btn--primary" style="width:100%">
+                Записаться на приём
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</p>
+            </div>
+          </form>
+
+          <!-- Сообщение об успехе -->
+          <div class="success" id="success">
+            <div class="success__icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h3>Заявка отправлена!</h3>
+            <p>Спасибо, мы получили вашу заявку. Администратор перезвонит в течение 15 минут для подтверждения.</p>
+            <div class="success__details" id="successDetails"></div>
+            <button class="btn btn--ghost" id="againBtn">Записаться ещё раз</button>
+          </div>
+        </div>
+
+        <!-- Преимущества -->
+        <aside class="panel">
+          <h3 style="margin:0 0 24px;font-size:18px;letter-spacing:-.01em">Почему записываются к нам</h3>
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit__ic">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              </div>
+              <div>
+                <h4>Без ожидания</h4>
+                <p>Работаем строго по записи — ваш автомобиль примут точно в назначенное время.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__ic">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.4-3 8-7 9-4-1-7-4.6-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <div>
+                <h4>Гарантия 2 года</h4>
+                <p>На все выполненные работы и установленные запчасти даём письменную гарантию.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__ic">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7z"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg>
+              </div>
+              <div>
+                <h4>Бесплатная диагностика</h4>
+                <p>При заказе любого ремонта от 3 000 ₽ компьютерная диагностика — в подарок.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__ic">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v13H4z"/><path d="M8 22h8M12 18v4"/></svg>
+              </div>
+              <div>
+                <h4>Фиксированная смета</h4>
+                <p>Стоимость согласовываем до начала работ. Никаких скрытых доплат.</p>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="benefit__ic">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+              </div>
+              <div>
+                <h4>Оригинальные запчасти</h4>
+                <p>Собственный склад: оригинал и качественные аналоги в наличии.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">О компании</span>
+        <h2>АвтоТехСервис — 12 лет заботимся о вашем авто</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            <strong>АвтоТехСервис</strong> — независимый технический центр в Москве, который работает с 2013 года.
+            Мы специализируемся на ремонте и обслуживании легковых автомобилей европейских, азиатских и
+            американских марок — от бюджетных седанов до премиальных кроссоверов.
+          </p>
+          <p>
+            В нашем распоряжении 6 постов, современные диагностические стенды, покрасочная камера и
+            собственный склад запчастей. Мы не навязываем лишних работ: мастер показывает изношенную деталь
+            и объясняет, почему её нужно заменить сейчас, а что может подождать.
+          </p>
+          <p>
+            Более <strong>8 500 клиентов</strong> доверяют нам свои автомобили на постоянной основе.
+            Мы даём письменную гарантию 2 года на работы и 1 год на запчасти.
+          </p>
+
+          <ul class="features">
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Сертифицированные мастера с опытом от 8 лет
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Собственный склад запчастей — ремонт без долгого ожидания
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Комфортная зона ожидания с Wi-Fi и кофе
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Бесплатная эвакуация при ремонте от 15 000 ₽
+            </li>
+            <li>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Работаем с юридическими лицами, есть закрывающие документы
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Реквизиты и адрес</h3>
+
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <div>
+              <b>Адрес</b>
+              <span>г. Москва, ул. Автозаводская, 23, корп. 4<br>Въезд с торца здания, есть парковка</span>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div>
+              <b>Режим работы</b>
+              <span>Пн–Вс: 09:00 – 19:00<br>Без обеда и выходных</span>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+            <div>
+              <b>Телефон</b>
+              <span><a href="tel:+74951234567">+7 (495) 123-45-67</a></span>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div>
+              <b>E-mail</b>
+              <span><a href="mailto:info@avtoteh-service.ru">info@avtoteh-service.ru</a></span>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 3v4M16 3v4"/></svg>
+            <div>
+              <b>ООО «АвтоТехСервис»</b>
+              <span>ИНН 7712345678 · ОГРН 1137746000000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTS ================= -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Контакты</span>
+        <h2>Как нас найти</h2>
+        <p>Мы находимся в 5 минутах пешком от метро «Автозаводская». На территории — бесплатная парковка для клиентов.</p>
+      </div>
+
+      <div class="contacts__grid">
+        <div class="panel">
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <div><b>Адрес</b><span>г. Москва, ул. Автозаводская, 23, корп. 4</span></div>
+          </div>
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 6.2 2 2 0 0 1 5 4z"/></svg>
+            <div><b>Телефон</b><span><a href="tel:+74951234567">+7 (495) 123-45-67</a></span></div>
+          </div>
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><b>Режим работы</b><span>Ежедневно 09:00 – 19:00</span></div>
+          </div>
+          <div class="info-row">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><b>E-mail</b><span><a href="mailto:info@avtoteh-service.ru">info@avtoteh-service.ru</a></span></div>
+          </div>
+          <a href="#booking" class="btn btn--primary" style="width:100%;margin-top:22px">Записаться на приём</a>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Карта: АвтоТехСервис, ул. Автозаводская, 23"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=37.6330%2C55.6950%2C37.6780%2C55.7180&amp;layer=mapnik&amp;marker=55.7064%2C37.6568"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© 2025 АвтоТехСервис. Все права защищены.</span>
+    <span>г. Москва, ул. Автозаводская, 23, корп. 4 · <a href="tel:+74951234567">+7 (495) 123-45-67</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
